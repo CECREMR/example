@@ -3,4 +3,5 @@
 
 # python/hello
 
+# idea-plugin/demo
 
