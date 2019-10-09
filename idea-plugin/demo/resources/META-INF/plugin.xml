@@ -17,7 +17,12 @@
         <!-- Add your extensions here -->
     </extensions>
     <actions>
-        <action id="FirstPlugin" class="com.galJs.plugin.demo.HelloWorld" text="Hello World" description="A test menu ">
+        <action id="demo.FirstPlugin" class="com.galJs.plugin.demo.JavaHelloWorldAction" text="Hello World"
+                description="A test menu ">
+            <add-to-group group-id="HelpMenu" anchor="first"/>
+        </action>
+        <action id="demo.KtPlugin" class="com.galJs.plugin.demo.KtHelloWorldAction" text="Hello World Kt"
+                description="A test menu ">
             <add-to-group group-id="HelpMenu" anchor="first"/>
         </action>
     </actions>
