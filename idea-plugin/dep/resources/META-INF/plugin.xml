@@ -1,6 +1,6 @@
 <idea-plugin>
-    <id>com.galJs.plugin.demo</id>
-    <name>demo</name>
+    <id>com.galJs.plugin.dep</id>
+    <name>dep</name>
     <version>1.0</version>
     <vendor email="hit_lsy@163.com" url="https://cecremr.github.io/">GalJS</vendor>
 
@@ -17,17 +17,9 @@
         <!-- Add your extensions here -->
     </extensions>
     <actions>
-        <group id="demo.Group" class="com.galJs.plugin.demo.group.Group" text="TestGroup">
+        <action id="demo.KtPlugin" class="com.galJs.plugin.dep.MainAction" text="Hello World Kt"
+                description="A test menu">
             <add-to-group group-id="HelpMenu" anchor="first"/>
-        </group>
-        <action id="demo.FirstPlugin" class="com.galJs.plugin.demo.JavaHelloWorldAction" text="Hello World"
-                description="A test menu ">
-            <add-to-group group-id="HelpMenu" anchor="first"/>
-            <keyboard-shortcut first-keystroke="command shift y" second-keystroke="C" keymap="Mac OS X 10.5+"/>
-        </action>
-        <action id="demo.KtPlugin" class="com.galJs.plugin.demo.KtHelloWorldAction" text="Hello World Kt"
-                description="A test menu ">
-            <add-to-group group-id="demo.Group" relative-to-action="demo.FirstPlugin" anchor="after"/>
         </action>
     </actions>
 
